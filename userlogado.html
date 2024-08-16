@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G-Xite - Home do Usuário</title>
+    <link rel="icon" href="assets/img/Design-sem-nome.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/home-styles.css">
+</head>
+<body class="bg-dark text-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/Design-sem-nome.ico" alt="G-Xite Logo" width="30" height="30" class="d-inline-block align-top">
+                G-Xite
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-bell"></i> Notificações</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar Esquerda -->
+            <div class="col-md-3 bg-secondary pt-4">
+                <div class="text-center">
+                    <img src="assets/img/default-user.png" alt="Foto do Usuário" class="img-thumbnail mb-3" width="100" height="100">
+                    <h4>Nome do Usuário</h4>
+                </div>
+                <ul class="nav flex-column mt-4">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Meus Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Downloads</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Status</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Loja</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Suporte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Configurações</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Conteúdo Central - Chat -->
+            <div class="col-md-9 pt-4">
+                <h3 class="text-center">Chat Global</h3>
+                <div id="chat-box" class="border border-light p-3 rounded bg-dark" style="height: 400px; overflow-y: scroll;">
+                    <!-- Mensagens do chat aparecerão aqui -->
+                </div>
+                <div class="input-group mt-3">
+                    <input type="text" class="form-control" placeholder="Digite sua mensagem..." aria-label="Mensagem">
+                    <button class="btn btn-primary" type="button">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/home-scripts.js"></script>
+</body>
+</html>
